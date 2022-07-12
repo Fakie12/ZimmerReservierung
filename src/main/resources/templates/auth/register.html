@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .app-form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .app-form-group>label {
+            margin-bottom: 0.3rem;
+        }
+        
+        .app-form-group>input {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid;
+            padding: 6px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-screen grid grid-cols-2">
+        <section class="bg-[#EDEDED]"></section>
+        <section class="flex items-center justify-center">
+            <div class="w-[55%]">
+                <h2 class="text-3xl">Sich Registrieren</h2>
+                <form action="/#" class="mt-12 flex flex-col">
+                    <div class="app-form-group">
+                        <label for="surname">Vorname</label>
+                        <input type="surname" name="surname" placeholder="Vorname eingeben">
+                    </div>
+                    <div class="app-form-group mt-6">
+                        <label for="name">Nachname</label>
+                        <input type="name" name="name" placeholder="Nachname eingeben">
+                    </div>
+                    <div class="app-form-group mt-6">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email adresse eingeben">
+                    </div>
+                    <div class="app-form-group mt-6">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Password eingeben">
+                    </div>
+                    <div class="app-form-group mt-6">
+                        <label for="cpwd">Password bestätigen</label>
+                        <input type="cpwd" name="cpwd" placeholder="password wiederholen">
+                    </div>
+                    <button class="px-6 py-4 font-medium bg-black text-white rounded-lg mt-8">Registrieren</button>
+                </form>
+
+                <a href="/auth/login.html" class="flex justify-center font-medium mt-8">Sich anmelden</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -3,31 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hotel</title>
+    <title>Accueil</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-    <section class="main-view">
-        <div class="app-hero">
-            <div class="blur-box"></div>
-            <div class="main-box">
-                <nav class="app-navbar">
-                    <h4>Hotel</h4>
-                    <div>
-                        <button class="app-btn">Se connecter</button>
-                        <button class="app-btn">S'enregistrer</button>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <main>
-            <div class="app-container">
 
+    <section class="h-screen bg-[#EDEDED]">
+        <nav class="flex justify-between items-center px-16 h-[80px] overflow-hidden">
+            <div class="flex flex-col">
+                <h2 class="text-md font-bold" style="line-height: 1.3rem;">BAM'S Hotel</h2>
+                <span class="h-[4px] w-[65%] bg-black mt-2"></span>
             </div>
-        </main>
+            <div class="flex">
+                <a href="/auth/login.html" class="flex px-6 py-2 font-medium rounded-lg mr-4">Se connecter</a>
+                <a href="/auth/register.html" class="flex px-6 py-2 font-medium bg-white rounded-lg">S'inscrire</a>
+            </div>
+
+        </nav>
+        <div class="mt-44 px-16">
+            <h1 class="max-w-2xl text-5xl font-bold">
+                Rapidly build modern websites without ever leaving your HTML
+            </h1>
+            <p class="max-w-2xl text-2xl mt-12 text-slate-700">
+                A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+            </p>
+            <button class="px-6 py-4 text-xl font-medium bg-white rounded-lg mt-6">Faire une reservation</button>
+        </div>
     </section>
+
 </body>
 
 </html>

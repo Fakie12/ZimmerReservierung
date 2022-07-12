@@ -11,8 +11,8 @@ public class HomeController {
     @GetMapping("/")
     public String index(){
         return "index";
-
     }
+
     @GetMapping("/posts")
     public String posts(){
         return "your posts";
